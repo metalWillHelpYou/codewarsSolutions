@@ -2,7 +2,6 @@ import Foundation
 
 //Gravity Flip
 func flip(_ direction: String, _ a: [Int]) -> [Int] {
-    
     let sortedArray = a.sorted()
     
     if direction == "R" {
@@ -16,7 +15,6 @@ func flip(_ direction: String, _ a: [Int]) -> [Int] {
 
 //Quarter of the year
 func quarter(of month: Int) -> Int {
-    
   switch month {
     case 1...3 :
         return 1
@@ -29,10 +27,28 @@ func quarter(of month: Int) -> Int {
     default :
       return 0
     }
-    
 }
 
 //Reversed sequence
 func reverseSeq(n: Int) -> [Int] {
   return (1...n).reversed()
+}
+
+//Is he gonna survive?
+func hero(bullets: Int, dragons: Int) -> Bool {
+      return bullets % dragons == 0 ? true : false
+}
+
+//Simple multiplication
+func simpleMultiplication(_ num: Int) -> Int {
+    num % 2 == 0 ? num * 8 : num * 9
+}
+
+//Lost Without a Map
+func maps(a : Array<Int>) -> Array<Int> {
+    var doubleArray = [Int]()
+    for i in a {
+        doubleArray.append(i * 2)
+    }
+    return doubleArray
 }
