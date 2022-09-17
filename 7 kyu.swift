@@ -14,3 +14,13 @@ func sumOfMinimums(_ numbers: [[Int]]) -> Int {
     
     return result
 }
+
+//Spacify
+func spacify(_ str: String) -> String {
+    str.map { String($0) }.joined(separator: " ")
+}
+
+//Number of Decimal Digits
+func digits(num n: UInt64) -> Int {
+    String(n).count
+}
