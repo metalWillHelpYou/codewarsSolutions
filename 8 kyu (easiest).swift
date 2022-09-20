@@ -52,3 +52,40 @@ func maps(a : Array<Int>) -> Array<Int> {
     }
     return doubleArray
 }
+
+//Beginner - Reduce but Grow
+func grow(_ arr: [Int]) -> Int {
+    var result = 1
+    for i in arr {
+         result *= i
+    }
+    return result
+}
+
+//Fake Binary
+func fakeBin(digits: String) -> String {
+    var fakeString = ""
+    for i in digits {
+        i < "5" ? fakeString.append("0") : fakeString.append("1")
+    }
+  return fakeString
+}
+
+//Calculate BMI
+func bmi(_ weight: Int, _ height: Double) -> String {
+    switch Double(weight)/pow(height, 2) {
+      case ...18.5 :
+        return "Underweight"
+      case ...25.0 :
+        return "Normal"
+      case ...30.0 :
+        return "Overweight"
+      default :
+        return "Obese"
+    }
+}
+
+//Grasshopper - Personalized Message
+func great(_ name: String, _ owner: String) -> String {
+    name == owner ? "Hello boss" : "Hello guest"
+}
