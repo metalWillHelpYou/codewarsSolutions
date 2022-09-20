@@ -89,3 +89,40 @@ func bmi(_ weight: Int, _ height: Double) -> String {
 func great(_ name: String, _ owner: String) -> String {
     name == owner ? "Hello boss" : "Hello guest"
 }
+
+//Convert boolean values to strings 'Yes' or 'No'
+func boolToWord(_ bool: Bool) -> String {
+  bool == true ? "Yes" : "No"
+}
+
+//Grasshopper - Messi Goals
+var laLigaGoals = 43
+var championLeagueGoals = 10
+var copaDelReyGoals = 5
+
+var totalGoals = laLigaGoals + championLeagueGoals + copaDelReyGoals
+
+//Convert a Boolean to a String
+func booleanToString(_ b: Bool) -> String {
+  String(b)
+}
+
+//Stringy Strings
+func stringy(_ size: Int) -> String {
+    var result = ""
+    var i = 1
+    while size >= i {
+        result += i % 2 == 0 ? "0" : "1"
+        i += 1
+    }
+    return result
+}
+
+//Kata Example Twist
+func KataTwist() {
+  var websites = [String]()
+  let i = 0
+  while i <= 1000 {
+    websites.append("codewars")
+  }
+}
