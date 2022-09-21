@@ -178,3 +178,14 @@ func evenOrOdd(_ number:Int) -> String {
 func boolToWord(_ bool: Bool) -> String {
   bool == true ? "Yes" : "No"
 }
+
+//Switch it Up!
+func switchItUp(_ number: Int) -> String {
+    let array = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"]
+    return array[number]
+}
+
+//Get the mean of an array
+func getAverage(_ marks: [Int]) -> Int {
+    Int(marks.reduce(0, +) / marks.count)
+}
