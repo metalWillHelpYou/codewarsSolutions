@@ -189,3 +189,19 @@ func switchItUp(_ number: Int) -> String {
 func getAverage(_ marks: [Int]) -> Int {
     Int(marks.reduce(0, +) / marks.count)
 }
+
+//Convert a Boolean to a String
+func booleanToString(_ b: Bool) -> String {
+  String(b)
+}
+
+//Reversed Strings
+func reverse(_ str: String) -> String {
+    String(str.reversed())
+}
+
+//Function 1 - hello world
+func greet () -> String {
+  let a = "hello world!"
+  return a
+}
