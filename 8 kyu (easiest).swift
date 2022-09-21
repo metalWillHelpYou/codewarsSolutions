@@ -126,3 +126,55 @@ func KataTwist() {
     websites.append("codewars")
   }
 }
+
+//Opposite number
+func opposite(number: Double) -> Double {
+  number * -1
+}
+
+//Grasshopper - Summation
+func summation(_ n: Int) -> Int {
+    var i = 1
+    var sum = 0
+    for i in 1...n {
+        sum += i
+    }
+    return sum
+}
+
+//Grasshopper - Grade book
+func getGrade(_ s1: Int, _ s2: Int, _ s3: Int) -> String {
+  let result = (s1 + s2 + s3) / 3
+    switch result {
+    case 90...100 :
+        return "A"
+    case 80..<90 :
+        return "B"
+    case 70..<80 :
+        return "C"
+    case 60..<70 :
+        return "D"
+    default :
+        return "F"
+    }
+}
+
+//Returning Strings
+func greet(_ name: String) -> String {
+  return "Hello, \(name) how are you doing today?"
+}
+
+//Is n divisible by x and y?
+func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
+    n % x == 0 && n % y == 0  ? true : false
+}
+
+//Even or Odd
+func evenOrOdd(_ number:Int) -> String {
+  return number % 2 == 0 ? "Even" : "Odd"
+}
+
+//Convert boolean values to strings 'Yes' or 'No'
+func boolToWord(_ bool: Bool) -> String {
+  bool == true ? "Yes" : "No"
+}
