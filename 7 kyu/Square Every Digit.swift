@@ -1,4 +1,4 @@
-import Foundation
+//In this kata, you are asked to square every digit of a number and concatenate them.
 
 func squareDigits(_ num: Int) -> Int {
     let stringNum = String(num)
